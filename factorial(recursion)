@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int fact(int);
+int n;
+
+void main()
+{
+    int n;
+    printf("enter the number");
+    scanf("%d",&n);
+    printf("the factorial of the number is");
+    fact(n);
+}
+
+int fact(int n)
+{
+
+    if(n==0)
+    {
+        return 1;
+
+    }
+    else
+    {
+        return(fact(n-1)*n);
+    }
+}
