@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int fib(int n);
+int n;
+int fibo;
+
+void main()
+{
+    int n;
+    printf("enter the number");
+    scanf("%d",&n);
+    printf("the fibnanocci  is");
+    fibo=fib(n);
+    printf("%d",fibo);
+}
+
+int fib(int n)
+{
+
+    if(n==0)
+    {
+        return 0;
+
+    }
+    if(n==1)
+    {
+        return 1;
+    }
+    else {
+        return (fib(n-1)+fib(n-2));
+    }
+}
